@@ -7,7 +7,7 @@ Anyway, you can [see this theme in action here][samrat].
 
 ![screenshot](https://github.com/samrat/syte-pelican/raw/master/screenshot.png)
 
-To try this out, clone this repo and in your `settings.py`, set `THEME = /path/to/syte-pelican` and `MEDIA_URL= /path/to/syte-pelican/static`.
+To try this out, clone this repo and in your `settings.py`, set `THEME = /path/to/syte-pelican` and `MEDIA_URL= /path/to/syte-pelican/static`. Then run `python compress.py`.
 
 [syte]: http://rigoneri.github.com/syte/
 [samrat]: http://samrat.github.com
