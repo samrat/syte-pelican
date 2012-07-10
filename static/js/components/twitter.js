@@ -19,7 +19,7 @@ function setupTwitter(url, el) {
      var spinner = new Spinner(spin_opts).spin();
      $('#twitter-link').append(spinner.el);
 
-     require(["json!/twitter/" + username, "text!templates/twitter-view.html"], 
+     require(["json!/twitter/" + username, "text!../templates/twitter-view.html"], 
         function(twitter_data, twitter_view) {
             if (twitter_data.error || twitter_data.length == 0) {
                 window.location = href;

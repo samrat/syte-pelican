@@ -826,15 +826,15 @@ ol.linenums li {
   min-height: 700px;
   float: left;
   border-right: 1px solid #c2c2c2;
-  background: #e9e9e9 url('/static/imgs/b.png');
+  background: #e9e9e9 url('../../static/images/b.png');
 }
 .main-header hgroup .picture a {
   display: inline-block;
   height: 84px;
   width: 84px;
-  margin: 60px 35px 20px 35px;
+  margin: 40px 35px 20px 35px;
   border: 3px solid #333366;
-  background: #000000 0 url('https://twimg0-a.akamaihd.net/profile_images/1149409097/20101018060848_samrat94_6HR8FZ5V2JQDPU34ENIKCWBL0STAMO91XG7Y.jpg');
+  background: #000000 0 url('../../static/images/pic.png');
   -webkit-box-shadow: 0 1px 1px #f9f9f9, inset 0 0 6px #000000;
   -moz-box-shadow: 0 1px 1px #f9f9f9, inset 0 0 6px #000000;
   box-shadow: 0 1px 1px #f9f9f9, inset 0 0 6px #000000;
@@ -852,7 +852,7 @@ ol.linenums li {
   color: #4b4b4b;
 }
 .main-header nav {
-  margin: 65px 0;
+  margin: 35px 0;
 }
 .main-header nav ul {
   border-top: 1px solid #d2d2d2;

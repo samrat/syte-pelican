@@ -8,12 +8,12 @@ function fetchBlogPosts(post, tag) {
       blog_fetch_url = '/tags/' + tag;
 
   $.getJSON(blog_fetch_url, function(blog_posts) {
-      require(["text!templates/blog-post-text.html",
-              "text!templates/blog-post-photo.html",
-              "text!templates/blog-post-link.html",
-              "text!templates/blog-post-video.html",
-              "text!templates/blog-post-audio.html",
-              "text!templates/blog-post-quote.html"],
+      require(["text!theme/templates/blog-post-text.html",
+              "text!theme/templates/blog-post-photo.html",
+              "text!theme/templates/blog-post-link.html",
+              "text!theme/templates/blog-post-video.html",
+              "text!theme/templates/blog-post-audio.html",
+              "text!theme/templates/blog-post-quote.html"],
 
          function(text_post_template, photo_post_template, 
                   link_post_template, video_post_template, audio_post_template,
