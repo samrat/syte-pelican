@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}{{article.title}} | Samrat Man Singh{% endblock %}
+{% block title %}{{article.title}} | SITENAME{% endblock %}
 {% block main_section %}
 <section class="main-section blog-section" id="blog-posts">
 	<h3 class="date">{{article.locale_date}}</h3>
@@ -11,7 +11,7 @@
 	{{article.content}}
 
 	<p>
-	If you liked this post, you should <a href="http://twitter.com/samratmansingh">follow me on Twitter.</a>
+	{{ ARTICLE_FOOTER }}
 	</p>
 	{% include "twitter.html" %}
 	<br/><br/>		
