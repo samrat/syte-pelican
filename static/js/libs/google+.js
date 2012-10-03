@@ -6,6 +6,8 @@ var gplus_api_user = 'https://www.googleapis.com/plus/v1/people/';
 var gplus_api_posts = '/activities/public?maxResults=20';
 var gplus_api_access = 'key='
 
+var url = null;
+
 $('a[id^="google-link"]').click(function (e)
 {
     var url = prepare_link(e, this);
@@ -15,7 +17,7 @@ $('a[id^="google-link"]').click(function (e)
 });
 
 function showGoogle(e, t) {
-    var url = t.href;
+    url = t.href;
     var google_profile = $("#google-profile");
     if (google_profile.length > 0) {
         google_profile.modal('show');

@@ -1134,6 +1134,8 @@ width:100%;
 
 .modal.fade.in,.modal.fade-large.in {
 left:247px;
+position: fixed;
+height: 100%;
 }
 
 .profile.twitter,.profile.github,.profile.dribbble,.profile.instagram {

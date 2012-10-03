@@ -8,6 +8,7 @@ var twitter_api_json = '.json';
 
 var spinner = (new Spinner(spin_opts)).spin();
 var template = null;
+var url = null;
 var twitter_data = {};
 
 $('a[id^="twitter-link"]').click(function (e)
@@ -19,7 +20,7 @@ $('a[id^="twitter-link"]').click(function (e)
 });
 
 function showTwitter(e, t) {
-    var url = t.href;
+    url = t.href;
     var twitter_profile = $("#twitter-profile");
     if (twitter_profile.length > 0) {
         twitter_profile.modal('show');
