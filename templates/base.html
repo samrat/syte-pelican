@@ -3,15 +3,16 @@
 {% block head %}
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Personal website and blog of Samrat Man Singh. Follow him at @samratmansingh" />
-  <meta name="keywords" content="Samrat Man Singh, python, flask, computers, technology, nepal" />
+  <meta name="description" content="{{ META_DESCRIPTION }}" />
+  <meta name="keywords" content="{{ META_KEYWORDS }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}{{SITENAME}}{% endblock %}</title>
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
   <link rel="stylesheet" href="{{SITEURL}}/{{ MEDIA_URL }}css/styles.min.css" type="text/css" media="screen, projection">
 
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/SamratDotMe" />
+  <link rel="alternate" type="application/rss+xml" title="RSS"
+  href="{{ FEED_URL }}" />
   
 </head>
 {% endblock %}
@@ -22,7 +23,7 @@
       <a href="{{ SITEURL }}" rel="home"></a>
     </div>
     <h1>{{ SITENAME }}</h1>
-    <h2>18 year-old from Nepal interested in computers and technology.</h2>
+    <h2>{{ ABOUT }}</h2>
   </hgroup>
   <nav>
     <ul class="main-nav">
@@ -30,8 +31,8 @@
 	  {% for name, link in SOCIAL %}
 		<li><a href="{{ link }}" id="twitter-link">{{ name }}</a></li>
 	  {% endfor %}
-	  <li><a href="http://feeds.feedburner.com/SamratDotMe" id="github-link">Feed</a></li>
-      <li><a href="mailto:hi@samrat.me?subject=Hello" id="contact-link">Contact</a></li>
+	  <li><a href="{{ FEED_URL }}" id="github-link">Feed</a></li>
+      
   </nav>
   <a href="http://pelican.notmyidea.org" class="fork-me">Powered by Pelican.</a>
 
@@ -43,7 +44,7 @@
     <span class="nav-btn-bar"></span>
     <span class="nav-btn-bar"></span>
   </span>
-  <h3><a href="/">samrat.me</a></h3>
+  <h3><a href="/">{{ SITEURL }}</a></h3>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript">
