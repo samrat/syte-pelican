@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Archive | {{ SITENAME }} {% endblock %}
+{% block main_section %}
+<section class="main-section blog-section" id="blog-posts">
+  
+    <article>
+      <hgroup>
+	<h2>Archive</h2>
+      </hgroup>
+      {% for article in articles %}
+      <h3><a href="{{article.url}}" title="Permalink to
+                                           {{article.title}}"
+                                           style="line-height: 2.0em;">{{article.title}}</a> ({{article.locale_date}})</h3>
+
+      {% endfor %}
+    </article>
+</section>
+
+
+{% endblock %}
