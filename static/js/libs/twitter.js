@@ -14,7 +14,7 @@ var twitter_data = {};
 $('a[id^="Twitter-link"]').click(function (e)
 {
     var url = prepare_link(e, this);
-    adjustSelection("twitter-link");
+    adjustSelection("Twitter-link");
     remove_modal();
     showTwitter(url, this);
 });
@@ -26,7 +26,7 @@ function showTwitter(e, t) {
         twitter_profile.modal('show');
     }
     else {
-        $("#twitter-link").append(spinner.el);
+        $("#Twitter-link").append(spinner.el);
 
         $.get('/theme/templates/twitter-view.html', function(data) {
             // Request succeeded, data contains HTML template, we can load data

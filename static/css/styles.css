@@ -127,7 +127,7 @@ opacity:1;
 }
 
 ::selection,::-moz-selection {
-background:#B94D56;
+background:#D75701;
 color:#fff;
 text-shadow:none;
 }
@@ -183,17 +183,19 @@ margin-bottom:20px;
 }
 
 a {
-color:#B94D56;
+color:black;
 text-decoration:none;
+border-bottom: 1px solid #404040;
 }
 
 a:hover {
-color:#000;
+color: #D75701;
+border-bottom: 1px solid #D75701;
 }
 
 blockquote {
 margin-top:20px 0;
-border-left:5px solid #B94D56;
+border-left:5px solid #D75701;
 padding:0 0 0 20px;
 }
 
@@ -362,7 +364,7 @@ border-bottom:0;
 .profile-avatar img {
 height:52px;
 width:52px;
-border:2px solid #B94D56;
+border:2px solid #D75701;
 }
 
 .profile-name {
@@ -510,7 +512,7 @@ position:absolute;
 left:0;
 width:32px;
 height:32px;
-border:2px solid #B94D56;
+border:2px solid #D75701;
 }
 
 .tweet-title span {
@@ -622,7 +624,7 @@ padding:0 3px 2px;
 }
 
 code {
-color:#B94D56;
+color:#D75701;
 background-color:#f7f7f9;
 border:1px solid #e1e1e8;
 padding:2px 4px;
@@ -711,7 +713,7 @@ background:#e9e9e9 url(../imgs/b.png);
 display:inline-block;
 height:84px;
 width:84px;
-border:3px solid #B94D56;
+border:3px solid #D75701;
 background:#000 0 url(https://twimg0-a.akamaihd.net/profile_images/1149409097/20101018060848_samrat94_6HR8FZ5V2JQDPU34ENIKCWBL0STAMO91XG7Y.jpg);
 -webkit-box-shadow:0 1px 1px #f9f9f9,inset 0 0 6px #000;
 -moz-box-shadow:0 1px 1px #f9f9f9,inset 0 0 6px #000;
@@ -758,13 +760,13 @@ padding:15px 30px;
 
 .main-header nav a:hover {
 color:#fff;
-background:#B94D56;
+background:#D75701;
 border-right:0;
 text-shadow:none;
 }
 
 .main-header nav .sel {
-border-right:6px solid #B94D56;
+border-right:6px solid #D75701;
 }
 
 .main-header .spinner {
@@ -797,18 +799,18 @@ border-top:1px solid #c2c2c2;
 font-size:16px;
 font-weight:700;
 background-color:rgba(255,255,255,0.8);
-color:#B94D56;
+color:#D75701;
 padding:20px 35px 30px 75px;
 }
 
 a.button_accent {
 display:inline-block;
-border:3px solid #B94D56;
+border:3px solid #D75701;
 border-radius:70px;
 -moz-border-radius:70px;
 -webkit-border-radius:70px;
 text-transform:uppercase;
-color:#B94D56;
+color:#D75701;
 font-size:17px;
 font-weight:400;
 margin:40px 50px;
@@ -821,7 +823,7 @@ color:#0e94ec;
 
 a.button_accent:hover {
 color:#fff;
-background-color:#B94D56;
+background-color:#D75701;
 outline:0;
 }
 
@@ -862,7 +864,7 @@ padding:2px;
 }
 
 .blog-section article a.img-link:hover img {
-border-color:#B94D56;
+border-color:#D75701;
 }
 
 .blog-section footer {
@@ -896,24 +898,24 @@ padding:3px 10px;
 }
 
 .tags a:hover {
-background:#B94D56;
+background:#D75701;
 color:#fff;
 text-shadow:none;
-border:1px solid #B94D56;
+border:1px solid #D75701;
 }
 
 .load-more-button {
 display:inline-block;
-background-color:#B94D56;
+background-color:#D75701;
 color:#fff;
 margin:0 20px 50px;
 padding:10px 30px;
 }
 
 .load-more-button:hover {
-border:1px solid #B94D56;
+border:1px solid #D75701;
 background:#fff;
-color:#B94D56;
+color:#D75701;
 }
 
 .load-more-button .spinner {
@@ -944,7 +946,7 @@ border-bottom:0;
 }
 
 .profile-name h2 a:hover,.profile-name h3 a:hover,.profile-stats li a:hover,.profile-stats li a:hover strong,.main-header .fork-me:hover {
-color:#B94D56;
+color:#D75701;
 }
 
 .profile-info-footer,.profile-tweets li,.profile-repos li {
@@ -977,7 +979,7 @@ border-bottom: none;
 
 .profile-repo-stats a:hover,.profile-shot-stats a:hover {
 border-bottom:0;
-color:#B94D56;
+color:#D75701;
 }
 
 pre code,blockquote code {
@@ -1009,7 +1011,7 @@ height:45px;
 width:100%;
 z-index:3000;
 background:#e9e9e9 url(../imgs/b.png);
-border-top:3px solid #B94D56;
+border-top:3px solid #D75701;
 -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.25);
 -moz-box-shadow:0 1px 3px rgba(0,0,0,0.25);
 box-shadow:0 1px 3px rgba(0,0,0,0.25);

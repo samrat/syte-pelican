@@ -13,7 +13,7 @@ var github_data = {};
 $('a[id^="Github-link"]').click(function (e)
 {
     var url = prepare_link(e, this);
-    adjustSelection("github-link");
+    adjustSelection("Github-link");
     remove_modal();
     showGithub(url, this);
 });
@@ -25,7 +25,7 @@ function showGithub(e, t) {
         github_profile.modal('show');
     }
     else {
-        $("#github-link").append(spinner.el);
+        $("#Github-link").append(spinner.el);
 
         $.get('/theme/templates/github-view.html', function(data) {
             // Request succeeded, data contains HTML template, we can load data

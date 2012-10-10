@@ -14,7 +14,7 @@ var instagram_data = {};
 $('a[id^="Instagram-link"]').click(function (e)
 {
     var url = prepare_link(e, this);
-    adjustSelection("instagram-link");
+    adjustSelection("Instagram-link");
     remove_modal();
     showInstagram(url, this);
 });
@@ -26,7 +26,7 @@ function showInstagram(e, t) {
         instagram_profile.modal('show');
     }
     else {
-        $("#instagram-link").append(spinner.el);
+        $("#Instagram-link").append(spinner.el);
 
         $.get('/theme/templates/instagram-view.html', function(data) {
             // Request succeeded, data contains HTML template, we can load data

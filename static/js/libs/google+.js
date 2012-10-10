@@ -11,7 +11,7 @@ var url = null;
 $('a[id^="Google-link"]').click(function (e)
 {
     var url = prepare_link(e, this);
-    adjustSelection("google-link");
+    adjustSelection("Google-link");
     remove_modal();
     showGoogle(url, this);
 });
@@ -25,7 +25,7 @@ function showGoogle(e, t) {
     else {
         var spinner = (new Spinner(spin_opts)).spin();
 
-        $("#google-link").append(spinner.el);
+        $("#Google-link").append(spinner.el);
 
         $.get('/theme/templates/google-view.html', function(data) {
             // Request succeeded, data contains HTML template, we can load data
