@@ -10,7 +10,7 @@ var template = null;
 var url = null;
 var github_data = {};
 
-$('a[id^="github-link"]').click(function (e)
+$('a[id^="Github-link"]').click(function (e)
 {
     var url = prepare_link(e, this);
     adjustSelection("github-link");

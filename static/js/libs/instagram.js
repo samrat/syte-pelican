@@ -11,7 +11,7 @@ var spinner = (new Spinner(spin_opts)).spin();
 var template = null;
 var instagram_data = {};
 
-$('a[id^="instagram-link"]').click(function (e)
+$('a[id^="Instagram-link"]').click(function (e)
 {
     var url = prepare_link(e, this);
     adjustSelection("instagram-link");

@@ -24,14 +24,18 @@
   </hgroup>
   <nav>
     <ul class="main-nav">
+      {% if DISPLAY_HOME_ON_MENU %}
+      <li><a href="{{ SITEURL }}/">Home</a></li>
+      {% endif %}
+
       {% if DISPLAY_PAGES_ON_MENU %}
         {% for current_page in PAGES %}
       <li><a href="{{ SITEURL }}/{{ current_page.url }}">{{ current_page.title }}</a></li>
         {% endfor %}
       {% endif %}
 
-      {% for name, id, url in SOCIAL %}
-      <li><a href="{{ url }}" id="{{ id }}-link">{{ name }}</a></li>
+      {% for title, url in SOCIAL %}
+      <li><a href="{{ url }}" id="{{ title }}-link">{{ title }}</a></li>
       {% endfor %}
 
       <li><a href="{{ SITEURL }}/{{ FEED_RSS }}" id="feed-link">Feed</a></li>

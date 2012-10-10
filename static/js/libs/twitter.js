@@ -11,7 +11,7 @@ var template = null;
 var url = null;
 var twitter_data = {};
 
-$('a[id^="twitter-link"]').click(function (e)
+$('a[id^="Twitter-link"]').click(function (e)
 {
     var url = prepare_link(e, this);
     adjustSelection("twitter-link");

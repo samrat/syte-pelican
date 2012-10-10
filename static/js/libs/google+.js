@@ -8,7 +8,7 @@ var gplus_api_access = 'key='
 
 var url = null;
 
-$('a[id^="google-link"]').click(function (e)
+$('a[id^="Google-link"]').click(function (e)
 {
     var url = prepare_link(e, this);
     adjustSelection("google-link");
