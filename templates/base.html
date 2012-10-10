@@ -52,6 +52,9 @@
     <span class="nav-btn-bar"></span>
     <span class="nav-btn-bar"></span>
   </span>
+  <h3>
+    <a href="{{ SITEURL }}/" id="mobile-title">{{ SITEURL }}</a>
+  </h3>
 </div>
 
 <script src="{{ SITEURL }}/{{ MEDIA_URL }}js/libs/jquery-1.7.2.min.js"></script>
@@ -91,6 +94,8 @@
 
     var max_height = Array.max(heights);
     $('.main-header').height(max_height+80);
+
+    $('#mobile-title').text(window.location.hostname);
 
 {% if GITHUB_INTEGRATION_ENABLED %}
     var github_username = '{{ GITHUB_USERNAME }}';
