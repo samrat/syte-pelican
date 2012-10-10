@@ -32,7 +32,7 @@ CONTACT = u'your@email.com' (Pretty explicit)
 GITHUB_INTEGRATION_ENABLED = True (If you want to integrate Github)
 GITHUB_USERNAME = 'your_username' (Needed if GITHUB_INTEGRATION_ENABLED is set to True)
 
-###### Google+ integration
+###### Google integration
 
 GPLUS_INTEGRATION_ENABLED = True (If you want to integrate Google+)
 GPLUS_USERNAME = 'your_username|identifier' (Needed if GPLUS_INTEGRATION_ENABLED is set to True)
@@ -43,7 +43,7 @@ GPLUS_API_ACCESS = 'your_api_access_key' (Needed if GPLUS_INTEGRATION_ENABLED is
 TWITTER_INTEGRATION_ENABLED = True (If you want to integrate Twitter)
 TWITTER_USERNAME = 'your_username' (Needed if TWITTER_INTEGRATION_ENABLED is set to True)
 
-###### Instagram+ integration
+###### Instagram integration
 
 INSTAGRAM_INTEGRATION_ENABLED = True (If you want to integrate Instagram)
 INSTAGRAM_USERNAME = 'your_username' (Needed if INSTAGRAM_INTEGRATION_ENABLED is set to True)
