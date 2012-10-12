@@ -19,6 +19,8 @@ ABOUT = u'Describe yourself or your site here, this will go right under the site
 SITE_DESCRIPTION = u'Used in HTML meta tag for description'
 SITE_KEYWORDS = u'Used in the HTML meta tag for keywords'
 
+Pelican-syte uses the webassets module integrated into Pelican, so you will also need to install it ( `pip install webassets` ) and add the `WEBASSETS = True` setting.
+
 #### Links
 
 DISPLAY_HOME_ON_MENU = True (If you still want to display a 'Home' link, note that the site name is already a link to the home page)

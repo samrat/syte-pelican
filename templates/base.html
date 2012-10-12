@@ -7,8 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}{{SITENAME}}{% endblock %}</title>
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <link rel="stylesheet" href="{{SITEURL}}/{{ MEDIA_URL }}css/styles.css" type="text/css" media="screen, projection">
-  <link rel="stylesheet" href="{{SITEURL}}/{{ MEDIA_URL }}css/pygments.css" type="text/css" media="screen, projection">
+
+{% assets filters="cssmin", output="css/styles.min.css", "css/styles.css", "css/pygments.css" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+{% endassets %}
+
   <link rel="shortcut icon" type="image/png" href="{{ GRAVATAR }}" />
   {% block head %}{% endblock %}
 </head>
@@ -57,29 +60,9 @@
   </h3>
 </div>
 
-<script src="{{ SITEURL }}/{{ MEDIA_URL }}js/libs/jquery-1.7.2.min.js"></script>
-<script src="{{ SITEURL }}/{{ MEDIA_URL }}js/libs/jquery.url.js"></script>
-<script src="{{ SITEURL }}/{{ MEDIA_URL }}js/libs/bootstrap-modal.js"></script>
-<script src="{{ SITEURL }}/{{ MEDIA_URL }}js/libs/handlebars.js"></script>
-<script src="{{ SITEURL }}/{{ MEDIA_URL }}js/libs/spin.min.js"></script>
-<script src="{{ SITEURL }}/{{ MEDIA_URL }}js/libs/moment.min.js"></script>
-<script src="{{ SITEURL }}/{{ MEDIA_URL }}js/common.js"></script>
-
-{% if GITHUB_INTEGRATION_ENABLED %}
-<script src="{{ SITEURL }}/{{ MEDIA_URL }}js/libs/github.js"></script>
-{% endif %}
-
-{% if GPLUS_INTEGRATION_ENABLED %}
-<script src="{{ SITEURL }}/{{ MEDIA_URL }}js/libs/google+.js"></script>
-{% endif %}
-
-{% if TWITTER_INTEGRATION_ENABLED %}
-<script src="{{ SITEURL }}/{{ MEDIA_URL }}js/libs/twitter.js"></script>
-{% endif %}
-
-{% if INSTAGRAM_INTEGRATION_ENABLED %}
-<script src="{{ SITEURL }}/{{ MEDIA_URL }}js/libs/instagram.js"></script>
-{% endif %}
+{% assets filters="rjsmin", output="gen/packed.js", "js/libs/jquery-1.7.2.min.js", "js/libs/jquery.url.js", "js/libs/bootstrap-modal.js", "js/libs/handlebars.js", "js/libs/spin.min.js", "js/libs/moment.min.js", "js/common.js", "js/libs/github.js", "js/libs/google+.js", "js/libs/twitter.js", "js/libs/instagram.js" %}
+    <script src="{{ ASSET_URL }}"></script>
+{% endassets %}
 
 <script>
     // Function to get the Maximam value in Array
